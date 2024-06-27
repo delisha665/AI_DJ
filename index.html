@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<center>
+  	<h3 id="title">AI DJ WEB APP
+	    <br>
+	    <span style="font-size: 18px; color:aqua">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+	<br><br>
+  <button onclick="play()" id="btn_play" class="btn-lg btn-success">PLAY</button>
+  <br>
+  <button onclick="pause()" id="pause" class="btn btn-danger">PAUSE</button>
+  <button onclick="stop()" id="stop" class="btn btn-warning">STOP</button>
+  <br>
+  <!-- <select id="music_names">
+    <option value="s1">Sound 1</option>
+    <option value="s2">Sound 2</option>
+    <option value="s3">Sound 3</option>
+  </select> -->
+  <div id="speed_div">
+<img class="img" src="disk.gif" >
+<br>
+<h3 id="speed_title" class="btn btn-info">Speed</h3>
+  </div>
+  <div id="volume_div">
+    <img class="img" src="disk.gif" >
+    <br>
+    
+    <h3 id="volume_title" class="btn btn-info">Volume</h3>
+  
+      </div>
+    
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
